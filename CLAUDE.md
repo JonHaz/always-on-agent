@@ -11,6 +11,8 @@ The agent is the program; these files are its input. Two tracks run against it:
 - **Incident triage** — read `issues/`, correlate against `runbooks/` and `deploys/recent.json`, then set severity/labels/assignee and propose a fix.
 - **Compliance drift** ("Card C") — scan `contracts/` against `compliance-policy.md` and open an issue per violation.
 
+The agent's design — loop, tool registry, trust boundary, gates, and the rollout phases — is in [docs/agent-design.md](docs/agent-design.md). Read it before building or changing the routine; it also carries the readiness rubric and harness principles the design is graded against.
+
 ## Commands
 
 There is nothing to build or test. The useful commands are data queries and repo setup.
